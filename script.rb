@@ -15,3 +15,8 @@ puts expo
 # returns remainder of division
 modu = 25 % 7
 puts modu
+
+# adds \n after the line
+puts "What's up?"
+# no \n
+print "Oxnard Montalvo"
