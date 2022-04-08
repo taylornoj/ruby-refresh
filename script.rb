@@ -24,5 +24,7 @@ print "Oxnard Montalvo"
 puts "--"
 
 # methods
-length = "I love dogs".length
-puts length
+puts"I love dogs".length
+
+
+puts "Taylor".reverse
