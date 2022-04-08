@@ -26,5 +26,9 @@ puts "--"
 # methods
 puts"I love dogs".length
 
-
 puts "Taylor".reverse
+
+puts "taylor".upcase
+
+puts "tayloR".downcase
+
