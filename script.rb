@@ -36,3 +36,5 @@ puts "tayloR".downcase
 I'm a comment!
 A multi line comment!
 =end 
+
+puts "Taylor".downcase.reverse.upcase
