@@ -10,3 +10,8 @@ puts my_string
 # raises one number (the base) to the power of the other number (exponent)
 expo = 2**3
 puts expo
+
+# modulo (%)
+# returns remainder of division
+modu = 25 % 7
+puts modu
