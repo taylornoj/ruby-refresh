@@ -20,3 +20,9 @@ puts modu
 puts "What's up?"
 # no \n
 print "Oxnard Montalvo"
+
+puts "--"
+
+# methods
+length = "I love dogs".length
+puts length
