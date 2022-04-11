@@ -8,3 +8,9 @@ and 'end' (to open and close the block)
 
 =end
 
+i = 20
+loop do
+  i -= 1
+  print "#{i} "
+  break if i <= 0
+end
