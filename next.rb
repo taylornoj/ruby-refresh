@@ -4,5 +4,5 @@
 for i in 1..5
   # if remainder of 1/2 == 0, we go to enxt iteration of the loop
   next if i % 2 == 0
-  print i
+  print i # 1, 3, 5
 end
