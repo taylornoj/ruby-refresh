@@ -7,5 +7,6 @@ ex. my_hash = Hash.new
 =end
 
 pets = Hash.new
-pets["Ellie"] = "dog"
 # adds the key "Ellie" with value "dog"
+pets["Ellie"] = "dog"
+puts pets["Ellie"]
