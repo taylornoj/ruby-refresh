@@ -19,7 +19,7 @@ end
 # use .reverse to reverse sorted frequencies array - more frequent words on top of list
 frequencies.reverse!
 
-# iterate voer array to print out each key value pair - word and count
+# iterate over array to print out each key value pair - word and count
 frequencies.each do |word, count|
   puts word + " " + count.to_s
 end
