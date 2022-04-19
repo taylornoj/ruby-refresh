@@ -19,4 +19,6 @@ end
 # use .reverse to reverse sorted frequencies array - more frequent words on top of list
 frequencies.reverse!
 
-frequencies.each { |word, frequency| puts word + " " + frequency.to_s }
+frequencies.each do |word, count|
+  puts word + " " + count.to_s
+end
