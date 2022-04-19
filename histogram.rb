@@ -6,6 +6,8 @@ words = text.split(" ")
 
 # 0 is the default value for the hash
 frequencies = Hash.new(0)
+
+#iterate over words to add each word to frequencies hash
 words.each { |word| frequencies[word] += 1 }
 frequencies = frequencies.sort_by {|a, b| b }
 frequencies.reverse!
