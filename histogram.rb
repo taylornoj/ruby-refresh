@@ -1,7 +1,10 @@
 puts "Text please: "
 text = gets.chomp
 
+# turn users string into something we can iterate over - calling split on text will turn it into an array
 words = text.split(" ")
+
+# 0 is the default value for the hash
 frequencies = Hash.new(0)
 words.each { |word| frequencies[word] += 1 }
 frequencies = frequencies.sort_by {|a, b| b }
