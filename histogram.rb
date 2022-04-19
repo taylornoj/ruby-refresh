@@ -9,6 +9,14 @@ frequencies = Hash.new(0)
 
 #iterate over words to add each word to frequencies hash
 words.each { |word| frequencies[word] += 1 }
-frequencies = frequencies.sort_by {|a, b| b }
+
+# sort frequencies hash by word count and store results back in frequencies
+# .sort_by returns an array of arrays
+frequencies = frequencies.sort_by do |word, count|
+  count
+end
+
+# use reverse to reverse sorted frequencies array
 frequencies.reverse!
+
 frequencies.each { |word, frequency| puts word + " " + frequency.to_s }
