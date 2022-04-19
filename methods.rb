@@ -1,6 +1,7 @@
 # methods are reusable code - written to perform a specific task in a program
 
 # separation of concerns - assigning specific tasks to separate methods
+  # makes program less redundant and more reusable
 
 def prime(n)
   puts "That's not an integer." unless n.is_a? Integer
