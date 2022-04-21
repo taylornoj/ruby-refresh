@@ -8,6 +8,8 @@
   # body - code block that describes the procedures
   # end - end keyword
 
+# call a method by writing its name
+
 def prime(n)
   puts "That's not an integer." unless n.is_a? Integer
   is_prime = true
