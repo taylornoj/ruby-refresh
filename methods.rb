@@ -3,6 +3,11 @@
 # separation of concerns - assigning specific tasks to separate methods
   # makes program less redundant and more reusable
 
+# methods are defined using keyword def & then made up of 3 parts:
+  # header - includes the def keyword, name of the method and any arguments
+  # body - code block that describes the procedures
+  # end - end keyword
+
 def prime(n)
   puts "That's not an integer." unless n.is_a? Integer
   is_prime = true
