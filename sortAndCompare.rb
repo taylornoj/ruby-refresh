@@ -12,3 +12,11 @@ books.sort! { |firstBook, secondBook| firstBook <=> secondBook }
 books.sort! { |firstBook, secondBook| secondBook <=> firstBook }
 
 print books
+
+fruits = ["orange", "apple", "banana", "pear", "grapes"]
+
+fruits.sort! do |firstFruit, secondFruit|
+  secondFruit <=> firstFruit
+end
+
+print fruits
