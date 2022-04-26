@@ -13,3 +13,7 @@ books = ["Charlie and the Chocolate Factory", "War and Peace", "Utopia", "A Brie
 
 # will sort alphabetically 
 print books.sort!
+
+# NOTE:
+  # .sort returns a sorted array while leaving original array alone
+  # .sort! modifies the actual array
