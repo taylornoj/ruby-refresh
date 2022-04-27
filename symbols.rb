@@ -16,3 +16,14 @@ from strings.  While there can be multiple different strings that all have the s
 value, there's only one copy of any particular symbol at a given time
 
 =end
+
+ # object_id method gets ID of an object
+
+# the two "strings" are different objects while...
+puts "string".object_id # 22151120
+puts "string".object_id # 22150880
+
+# :symbol is the same object listed twice
+puts :symbol.object_id # 802268
+puts :symbol.object_id # 802268
+
