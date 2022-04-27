@@ -22,3 +22,14 @@ creatures = { "weasels" => 0,
 
 puts creatures["weasels"]
 # prints 0
+
+=begin
+
+nil doesn't have to be a default value - if you create your hash using Hash.new,
+you can specift a default like so:
+
+my_hash = Hash.new("Trady Blix")
+
+Now if you try to access a nonexistent key in my_hash, you'll get "Trady Blix" as a result
+
+=end
