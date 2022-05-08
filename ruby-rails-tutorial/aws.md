@@ -508,3 +508,35 @@ using ```<% ... %>``` means Rails should call the provide function & associate t
 ```<%= ... %>``` is used to insert the title into the template using Ruby's yield function [this executes and inserts the results into the template]
 
 In the app/views/layouts/application.html.erb we have ```<%= yield %>``` now in the title element and in body - so this code is responsible to inserting contents of each page into the layout
+
+***
+
+**Built in Helpers**
+
+```ruby
+<%= stylesheet_link_tag 'application', media: 'all',
+                                       'data-turbolinks-track': 'reload' %>
+```
+
+This line uses the built-in Rails function ```stylesheet_link_tag``` to include ```application.css``` for all media types
+
+Rails allows for the creation of new custom functions/helpers
+
+***
+
+```ruby
+>> ""         # string literal
+=> ""
+>> "foo" + "bar"    # String concatenation
+=> "foobar"
+>> first_name = "Michael"    # Variable assignment
+=> "Michael"
+>> "#{first_name} Hartl"     # String interpolation
+=> "Michael Hartl"
+>> last_name = "Hartl"
+=> "Hartl"
+>> first_name + " " + last_name    # Concatenation, with a space in between
+=> "Michael Hartl"
+>> "#{first_name} #{last_name}"    # The equivalent interpolation
+=> "Michael Hartl"
+````
