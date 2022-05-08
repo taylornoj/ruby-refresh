@@ -539,4 +539,17 @@ Rails allows for the creation of new custom functions/helpers
 => "Michael Hartl"
 >> "#{first_name} #{last_name}"    # The equivalent interpolation
 => "Michael Hartl"
+
+>> 'foo'          # A single-quoted string
+=> "foo"
+>> 'foo' + 'bar'
+=> "foobar"
+>> '#{foo} bar'     # Single-quoted strings don't allow interpolation
+=> "\#{foo} bar"  # console returns double quoted strings anyway
+
+# if you need to include a backslash (which is normally a special character), using single quotes makes that easier
+
+>> '\n'       # A literal 'backslash n' combination
+=> "\\n"
+
 ````
