@@ -524,6 +524,8 @@ Rails allows for the creation of new custom functions/helpers
 
 ***
 
+**Strings**
+
 ```ruby
 >> ""         # string literal
 => ""
@@ -551,5 +553,22 @@ Rails allows for the creation of new custom functions/helpers
 
 >> '\n'       # A literal 'backslash n' combination
 => "\\n"
+```
 
-````
+***
+
+**Objects**
+
+Everything in Ruby is an object - even ```nil```
+
+So it's easier to describe what objects *do*, which is respond to messages/methods
+
+For examples:
+```ruby
+>> "foobar".length        # Passing the "length" message to a string
+=> 6
+>> "foobar".empty? # ? indicates return value is boolean
+=> false
+>> "".empty?
+=> true
+```
